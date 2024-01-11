@@ -1,11 +1,11 @@
 %global srcname dbus-client-gen
 
 Name:           python-%{srcname}
-Version:        0.5
-Release:        5%{?dist}
+Version:        0.5.1
+Release:        1%{?dist}
 Summary:        Library for Generating D-Bus Client Code
 
-License:        MPLv2.0
+License:        MPL-2.0
 URL:            https://github.com/stratis-storage/dbus-client-gen
 Source0:        %{url}/archive/v%{version}/%{srcname}-%{version}.tar.gz
 
@@ -46,6 +46,10 @@ Python 3 version.
 %{python3_sitelib}/dbus_client_gen-*.egg-info/
 
 %changelog
+* Wed May 03 2023 Bryan Gurney <bgurney@redhat.com> - 0.5.1-1
+- Update to 0.5.1
+- Resolves: rhbz#2192384
+
 * Tue Aug 10 2021 Mohan Boddu <mboddu@redhat.com> - 0.5-5
 - Rebuilt for IMA sigs, glibc 2.34, aarch64 flags
   Related: rhbz#1991688
